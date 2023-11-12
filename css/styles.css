@@ -1,0 +1,101 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+a {
+    color: #007bff;
+    font-family: 'Times New Roman', serif;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;  */
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+body.contato-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Adicione esta regra de estilo na sua folha de estilo */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    /* Proporção de 16:9 (ajuste conforme necessário) */
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sobre-img {
+    max-width: 100%;
+    height: auto;
+}
